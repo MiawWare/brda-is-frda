@@ -93,6 +93,15 @@ After users complete the quiz, their responses are scored based on the rating of
 
 The total score is used to assign the user a Brain Rot Tier, which determines their level of internet fluency and helps with matching users who "get it."
 
+
+## 🧪 Run Locally
+
+```bash
+git clone https://github.com/yourusername/meme-quiz-app
+cd meme-quiz-app
+open index.html
+
+
 ---
 
 > Built with love and terminally online energy 💀✨

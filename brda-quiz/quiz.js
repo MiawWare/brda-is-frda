@@ -1,62 +1,16 @@
 // Replace this with fetch('memes.json') if using an external file
-const memes = [
-    {
-        "name": "Oo Ee A E A Cat",
-        "image": "https://knowyourmeme.com/photos/2606605-i-wake-up-there-is-x",
-        "kym_url": "https://knowyourmeme.com/memes/oo-ee-a-e-a-cat-remixes",
-        "first_appearance": "2023",
-        "platform": "TikTok",
-        "rating": "basic"
-    },
-    {
-        "name": "Skibidi Toilet",
-        "image": "https://i.ytimg.com/vi/RjzJIb5cbrE/hqdefault.jpg",
-        "kym_url": "https://knowyourmeme.com/memes/subcultures/skibidi-toilet",
-        "first_appearance": "2023",
-        "platform": "YouTube",
-        "rating": "basic"
-    },
-    {
-        "name": "Wide Putin Walking",
-        "image": "https://i.ytimg.com/vi/VQ7lKPSUc2g/hqdefault.jpg",
-        "kym_url": "https://knowyourmeme.com/memes/wide-putin-walking-its-him",
-        "rating": "medium",
-        "first_appearance": "2020",
-        "platform": "YouTube"
-    },
-    {
-        "name": "Loss.jpg",
-        "image": "https://i.kym-cdn.com/photos/images/newsfeed/000/143/193/cad-20080602-358b1.jpg?1309710446",
-        "kym_url": "https://knowyourmeme.com/memes/loss",
-        "rating": "deep",
-        "first_appearance": "2008",
-        "platform": "Ctrl+Alt+Del"
-    },
-    {
-        "name": "Keyboard Cat",
-        "image": "https://i.ytimg.com/vi/J---aiyznGQ/hqdefault.jpg",
-        "kym_url": "https://knowyourmeme.com/memes/keyboard-cat",
-        "rating": "ancient",
-        "first_appearance": "2009",
-        "platform": "YouTube"
-    },
-    {
-        "name": "Honey Badger Don’t Care",
-        "image": "https://i.ytimg.com/vi/4r7wHMg5Yjg/hqdefault.jpg",
-        "kym_url": "https://knowyourmeme.com/memes/honey-badger",
-        "rating": "ancient",
-        "first_appearance": "2011",
-        "platform": "YouTube"
-    },
-    {
-        "name": "Rickroll",
-        "image": "https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg",
-        "kym_url": "https://knowyourmeme.com/memes/rickroll",
-        "rating": "ancient",
-        "first_appearance": "2006",
-        "platform": "4chan"
-    }
-];
+let memes = [];
+fetch('./memes/curated.json')
+  .then(response => response.json())
+  .then(data => {
+    memes = data;
+    startQuiz(); // start showing memes
+  });
+
+function startQuiz() {
+  // your quiz logic here (same as before)
+}
+
 
 // Scoring weights
 const weights = {
