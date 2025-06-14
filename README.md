@@ -1,1 +1,1 @@
-# swipe-on-brainrot
+# brda-is-frda
