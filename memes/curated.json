@@ -1,0 +1,66 @@
+ [
+    {
+        "name": "Oo Ee A E A Cat",
+        "image": "https://knowyourmeme.com/photos/2606605-i-wake-up-there-is-x",
+        "kym_url": "https://knowyourmeme.com/memes/oo-ee-a-e-a-cat-remixes",
+        "first_appearance": "2023",
+        "platform": "TikTok",
+        "rating": "basic"
+    },
+    {
+        "name": "Skibidi Toilet",
+        "image": "https://i.ytimg.com/vi/RjzJIb5cbrE/hqdefault.jpg",
+        "kym_url": "https://knowyourmeme.com/memes/subcultures/skibidi-toilet",
+        "first_appearance": "2023",
+        "platform": "YouTube",
+        "rating": "basic"
+    },
+    {
+        "name": "Wide Putin Walking",
+        "image": "https://i.ytimg.com/vi/VQ7lKPSUc2g/hqdefault.jpg",
+        "kym_url": "https://knowyourmeme.com/memes/wide-putin-walking-its-him",
+        "rating": "medium",
+        "first_appearance": "2020",
+        "platform": "YouTube"
+    },
+    {
+        "name": "Loss.jpg",
+        "image": "https://i.kym-cdn.com/photos/images/newsfeed/000/143/193/cad-20080602-358b1.jpg?1309710446",
+        "kym_url": "https://knowyourmeme.com/memes/loss",
+        "rating": "deep",
+        "first_appearance": "2008",
+        "platform": "Ctrl+Alt+Del"
+    },
+    {
+        "name": "Keyboard Cat",
+        "image": "https://i.ytimg.com/vi/J---aiyznGQ/hqdefault.jpg",
+        "kym_url": "https://knowyourmeme.com/memes/keyboard-cat",
+        "rating": "ancient",
+        "first_appearance": "2009",
+        "platform": "YouTube"
+    },
+    {
+        "name": "Honey Badger Don’t Care",
+        "image": "https://i.kym-cdn.com/photos/images/newsfeed/000/116/713/honey-badger.jpg",
+        "kym_url": "https://knowyourmeme.com/memes/honey-badger-dont-care",
+        "rating": "ancient",
+        "first_appearance": "2011",
+        "platform": "YouTube"
+    },
+    {
+        "name": "Shrek’s Phone Call",
+        "image": "https://i.kym-cdn.com/photos/images/original/002/425/090/11a.png",
+        "kym_url": "https://knowyourmeme.com/memes/shreks-phone-call",
+        "rating": "cursed",
+        "first_appearance": "2021",
+        "platform": "TikTok"
+    },
+    {
+        "name": "Deep Fried Pikachu",
+        "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/316/935/d62.jpg",
+        "kym_url": "https://knowyourmeme.com/memes/deep-fried-memes",
+        "rating": "cursed",
+        "first_appearance": "2017",
+        "platform": "Various"
+    }
+]

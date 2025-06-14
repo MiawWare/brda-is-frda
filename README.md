@@ -68,6 +68,32 @@ Contributions welcome! Feel free to:
 
 MIT License — use, remix, and rot responsibly.
 
+## Addition information: rating system v1
+Each meme in the quiz has a rating field that represents how recognizable or obscure it is. This helps us build accurate profiles based on how deeply users are immersed in internet culture.
+
+| Rating    | Description                                                                         | Examples                                           |
+| --------- | ----------------------------------------------------------------------------------- | -------------------------------------------------- |
+| `basic`   | Widely recognizable and recently viral — even normies might know these.             | Uueeeeiiiaaa Cat, Skibidi Toilet, Gigachad, Wojak  |
+| `medium`  | Known to regular internet users but not mainstream.                                 | Wide Putin, Jerma edits, Slenderman TikToks        |
+| `deep`    | Niche memes known mainly by chronically online users or forum lurkers.              | Loss.jpg, Hypercam 2, "Tony Pizza"                 |
+| `ancient` | Early 2000s–2010s internet classics — useful for inferring age or platform history. | Keyboard Cat, Charlie Bit My Finger, Honey Badger  |
+| `cursed`  | Weirdcore, ironic, deep-fried, or absurdist memes with unhinged vibes.              | Deep fried Shrek, Soundclown edits, weirdcore cats |
+
+
+## Brain Rot Scoring System
+After users complete the quiz, their responses are scored based on the rating of each meme they recognized.
+
+| Rating    | Score Value |
+| --------- | ----------- |
+| `basic`   | +1          |
+| `medium`  | +2          |
+| `deep`    | +3          |
+| `ancient` | +2          |
+| `cursed`  | +5          |
+
+The total score is used to assign the user a Brain Rot Tier, which determines their level of internet fluency and helps with matching users who "get it."
+
 ---
 
 > Built with love and terminally online energy 💀✨
+Started 14jun25
