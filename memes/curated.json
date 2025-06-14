@@ -1,7 +1,7 @@
  [
     {
         "name": "Oo Ee A E A Cat",
-        "image": "https://knowyourmeme.com/photos/2606605-i-wake-up-there-is-x",
+        "image": "memes/Oo Ee A E A Cat.png",
         "kym_url": "https://knowyourmeme.com/memes/oo-ee-a-e-a-cat-remixes",
         "first_appearance": "2023",
         "platform": "TikTok",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Skibidi Toilet",
-        "image": "https://i.ytimg.com/vi/RjzJIb5cbrE/hqdefault.jpg",
+        "image": "memes/skibidi.jpg",
         "kym_url": "https://knowyourmeme.com/memes/subcultures/skibidi-toilet",
         "first_appearance": "2023",
         "platform": "YouTube",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Wide Putin Walking",
-        "image": "https://i.ytimg.com/vi/VQ7lKPSUc2g/hqdefault.jpg",
+        "image": "memes/wide putin.jpg",
         "kym_url": "https://knowyourmeme.com/memes/wide-putin-walking-its-him",
         "rating": "medium",
         "first_appearance": "2020",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Loss.jpg",
-        "image": "https://i.kym-cdn.com/photos/images/newsfeed/000/143/193/cad-20080602-358b1.jpg?1309710446",
+        "image": "memes/loss.jpg",
         "kym_url": "https://knowyourmeme.com/memes/loss",
         "rating": "deep",
         "first_appearance": "2008",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Keyboard Cat",
-        "image": "https://i.ytimg.com/vi/J---aiyznGQ/hqdefault.jpg",
+        "image": "memes/Keyboard_cat.jpg",
         "kym_url": "https://knowyourmeme.com/memes/keyboard-cat",
         "rating": "ancient",
         "first_appearance": "2009",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Honey Badger Don’t Care",
-        "image": "https://i.ytimg.com/vi/4r7wHMg5Yjg/hqdefault.jpg",
+        "image": "memes/honeybadger.jpg",
         "kym_url": "https://knowyourmeme.com/memes/honey-badger",
         "rating": "ancient",
         "first_appearance": "2011",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Rickroll",
-        "image": "https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg",
+        "image": "memes/rickroll.jpg",
         "kym_url": "https://knowyourmeme.com/memes/rickroll",
         "rating": "ancient",
         "first_appearance": "2006",
