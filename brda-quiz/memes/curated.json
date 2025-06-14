@@ -41,26 +41,18 @@
     },
     {
         "name": "Honey Badger Don’t Care",
-        "image": "https://i.kym-cdn.com/photos/images/newsfeed/000/116/713/honey-badger.jpg",
-        "kym_url": "https://knowyourmeme.com/memes/honey-badger-dont-care",
+        "image": "https://i.ytimg.com/vi/4r7wHMg5Yjg/hqdefault.jpg",
+        "kym_url": "https://knowyourmeme.com/memes/honey-badger",
         "rating": "ancient",
         "first_appearance": "2011",
         "platform": "YouTube"
     },
     {
-        "name": "Shrek’s Phone Call",
-        "image": "https://i.kym-cdn.com/photos/images/original/002/425/090/11a.png",
-        "kym_url": "https://knowyourmeme.com/memes/shreks-phone-call",
-        "rating": "cursed",
-        "first_appearance": "2021",
-        "platform": "TikTok"
-    },
-    {
-        "name": "Deep Fried Pikachu",
-        "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/316/935/d62.jpg",
-        "kym_url": "https://knowyourmeme.com/memes/deep-fried-memes",
-        "rating": "cursed",
-        "first_appearance": "2017",
-        "platform": "Various"
+        "name": "Rickroll",
+        "image": "https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg",
+        "kym_url": "https://knowyourmeme.com/memes/rickroll",
+        "rating": "ancient",
+        "first_appearance": "2006",
+        "platform": "4chan"
     }
 ]
