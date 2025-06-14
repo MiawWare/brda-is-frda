@@ -1,4 +1,4 @@
-// Replace this with fetch('memes.json') if using an external file
+// Replace this with fetch('curated.json') if using an external file
 let memes = [];
 fetch('/memes/curated.json')
   .then(response => response.json())
