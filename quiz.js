@@ -1,15 +1,19 @@
 // Replace this with fetch('curated.json') if using an external file
 let memes = [];
-fetch('/memes/curated.json')
-  .then(response => response.json())
+fetch('memes/memes.json')
+  .then(res => {
+    if (!res.ok) throw new Error('Could not load memes.json');
+    return res.json();
+  })
   .then(data => {
+    console.log("Loaded memes:", data);
     memes = data;
-    startQuiz(); // start showing memes
+    showMeme(currentIndex); // Start quiz
+  })
+  .catch(err => {
+    console.error("Failed to load meme data:", err);
+    document.getElementById('quiz').innerText = "Error loading meme data.";
   });
-
-function startQuiz() {
-  // your quiz logic here (same as before)
-}
 
 
 // Scoring weights
