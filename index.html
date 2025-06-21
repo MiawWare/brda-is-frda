@@ -2,34 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Meme Recognition Quiz</title>
+  <title>Brainrot Dating App</title>
+  <link rel="stylesheet" href="styles/quiz.css" />
+  <link rel="stylesheet" href="styles/profile.css" />
+  <link rel="stylesheet" href="styles/swipe.css" />
   <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      max-width: 600px;
-      margin: 40px auto;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 16px 0;
-    }
-    button {
-      font-size: 16px;
-      margin: 8px;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
+    .section { display: none; }
+    .active { display: block; }
+    img { max-width: 300px; margin: 1em auto; }
+    button { margin: 1em; padding: 10px 20px; }
   </style>
 </head>
 <body>
-  <h1>🧠 Meme Recognition Quiz</h1>
-  <div id="quiz"></div>
-  <button id="yesBtn">I recognize this</button>
-  <button id="noBtn">I have no idea</button>
-  <div id="result"></div>
+  <h1>💘 Brainrot Dating App</h1>
+
+  <!-- QUIZ SECTION -->
+  <div id="quizSection" class="section active">
+    <h2>Do you recognize this meme?</h2>
+    <div id="quizContainer"></div>
+    <button id="yesBtn">I recognize this</button>
+    <button id="noBtn">I have no idea</button>
+  </div>
+
+  <!-- PROFILE SECTION -->
+  <div id="profileSection" class="section">
+    <h2>Your Meme Fluency: <span id="scoreDisplay"></span></h2>
+    <form id="profileForm">
+      <input name="username" placeholder="Username" required /><br />
+      <input name="age" type="number" placeholder="Age" /><br />
+      <select name="pronouns">
+        <option value="they/them">they/them</option>
+        <option value="she/her">she/her</option>
+        <option value="he/him">he/him</option>
+        <option value="custom">custom</option>
+      </select><br />
+      <textarea name="bio" placeholder="What's your vibe?" required></textarea><br />
+      <button type="submit">Save & See Matches</button>
+    </form>
+  </div>
+
+  <!-- SWIPE SECTION -->
+  <div id="swipeSection" class="section">
+    <h2>💞 Potential Matches</h2>
+    <div id="swipeCard"></div>
+    <button id="passBtn">Pass</button>
+    <button id="likeBtn">Like</button>
+    <div id="matchResult"></div>
+  </div>
 
   <script src="quiz.js"></script>
+  <script src="profile.js"></script>
+  <script src="swipe.js"></script>
 </body>
 </html>
+
+<!-- Firebase SDKs -->
+<!-- <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script> -->
+
+<!-- Your Firebase config -->
+<!-- <script src="firebase.js"></script> -->
+
+<!-- Your app logic -->
+<!-- <script src="quiz.js"></script>
+<script src="profile.js"></script>
+<script src="swipe.js"></script> -->
