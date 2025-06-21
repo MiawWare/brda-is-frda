@@ -1,6 +1,6 @@
 // Replace this with fetch('curated.json') if using an external file
 let memes = [];
-fetch('memes/memes.json')
+fetch('memes/curated.json')
   .then(res => {
     if (!res.ok) throw new Error('Could not load memes.json');
     return res.json();
