@@ -1,75 +1,47 @@
-const passBtn = document.getElementById("passBtn");
-const likeBtn = document.getElementById("likeBtn");
-const restartBtn = document.getElementById("restartBtn");
-const matchResult = document.getElementById("matchResult");
-const swipeCard = document.getElementById("swipeCard");
+function startSwipeDeck(users) {
+  const card = document.getElementById("swipeCard");
+  let index = 0;
 
-let otherUsers = [];
-let currentSwipe = 0;
-let currentUser = JSON.parse(localStorage.getItem("userProfile"));
+  function showUser(user) {
+    if (!user) {
+      card.innerHTML = "<p>No more matches!</p>";
+      document.getElementById("passBtn").style.display = "none";
+      document.getElementById("likeBtn").style.display = "none";
+      document.getElementById("restartBtn").style.display = "inline-block";
+      return;
+    }
 
-fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
-  headers: { "X-Master-Key": JSONBIN_API_KEY }
-})
-  .then(res => res.json())
-  .then(data => {
-    const allUsers = data.record || [];
-    otherUsers = allUsers.filter(u => u.username !== currentUser.username);
-    showProfile(currentSwipe);
-  })
-  .catch(err => console.error("Error loading matches:", err));
-
-function showProfile(index) {
-  if (index >= otherUsers.length) {
-    swipeCard.innerHTML = "<p>No more matches 😢</p>";
-    passBtn.style.display = "none";
-    likeBtn.style.display = "none";
-    restartBtn.style.display = "inline-block";
-    matchResult.textContent = "";
-    return;
+    card.innerHTML = `
+      <h3>${user.username} (${user.age})</h3>
+      <p>${user.pronouns}</p>
+      <p>${user.bio}</p>
+      <p>Meme Fluency Score: ${user.score}</p>
+    `;
   }
 
-  const match = otherUsers[index];
-  swipeCard.innerHTML = `
-    <h3>${match.username}</h3>
-    <p><strong>Score:</strong> ${match.score}</p>
-    <p>${match.bio}</p>
-  `;
-  passBtn.style.display = "inline-block";
-  likeBtn.style.display = "inline-block";
-  restartBtn.style.display = "none";
-  matchResult.textContent = "";
+  showUser(users[index]);
+
+  document.getElementById("passBtn").onclick = () => {
+    index++;
+    showUser(users[index]);
+  };
+
+  document.getElementById("likeBtn").onclick = () => {
+    index++;
+    showUser(users[index]);
+  };
+
+  document.getElementById("restartBtn").onclick = () => {
+    location.reload();
+  };
 }
 
-passBtn.addEventListener("click", () => {
-  currentSwipe++;
-  showProfile(currentSwipe);
-});
-
-likeBtn.addEventListener("click", () => {
-  const match = otherUsers[currentSwipe];
-  const diff = Math.abs(currentUser.score - match.score);
-
-  let result;
-  if (diff <= 3) result = "💘 Brainrot Soulmates!";
-  else if (diff <= 8) result = "🙂 Good Match!";
-  else result = "🫣 Too Normal / Too Deep in Rot";
-
-  matchResult.textContent = result;
-
-  currentSwipe++;
-  showProfile(currentSwipe);
-});
-
-restartBtn.addEventListener("click", () => {
-  // Option 1: Start quiz over
-  window.location.reload();
-
-  // Option 2: Or reset app state manually:
-  // currentSwipe = 0;
-  // showProfile(currentSwipe);
-  // matchResult.textContent = "";
-  // passBtn.style.display = "inline-block";
-  // likeBtn.style.display = "inline-block";
-  // restartBtn.style.display = "none";
-});
+// Load mock profiles (excluding current user)
+fetch("data/mock_profiles.json")
+  .then(res => res.json())
+  .then(data => {
+    const currentUser = JSON.parse(localStorage.getItem("userProfile"));
+    const otherUsers = data.filter(u => u.username !== currentUser.username);
+    startSwipeDeck(otherUsers);
+  })
+  .catch(console.error);
