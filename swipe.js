@@ -1,3 +1,15 @@
+fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+  headers: { "X-Master-Key": JSONBIN_API_KEY }
+})
+  .then(res => res.json())
+  .then(data => {
+    const currentUser = JSON.parse(localStorage.getItem("userProfile"));
+    const allUsers = data.record || [];
+    // exclude yourself
+    const otherUsers = allUsers.filter(u => u.username !== currentUser.username);
+    // now swipe through otherUsers as before
+  });
+
 let otherProfiles = [];
 let currentSwipe = 0;
 
