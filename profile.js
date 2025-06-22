@@ -1,4 +1,4 @@
-const JSONBIN_API_KEY = "$2a$10$KuVKNnmxQQmsZ4g3M0dnG.pUxb7RMjhNjGCZmy/qapjSSN424kuCq";
+const JSONBIN_API_KEY = "$2a$10$kCuZeXsVnWJpOg/Z8UFJFezdnCBVT4ZdwQC3AVVnu2MnAq3DAIWfu";
 const BIN_ID = "685880b88a456b7966b39945";
 
 console.log("profile.js loaded");
@@ -19,7 +19,7 @@ document.getElementById('profileForm').addEventListener('submit', function(e) {
   };
 
   console.log("Profile data to save:", profile);
-  
+
   // Read existing users first
   fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
     headers: {
