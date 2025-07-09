@@ -80,6 +80,7 @@ Each meme in the quiz has a rating field that represents how recognizable or obs
 | `cursed`  | Weirdcore, ironic, deep-fried, or absurdist memes with unhinged vibes.              | Deep fried Shrek, Soundclown edits, weirdcore cats |
 
 
+
 ## Brain Rot Scoring System
 After users complete the quiz, their responses are scored based on the rating of each meme they recognized.
 
